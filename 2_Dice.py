@@ -1,15 +1,21 @@
-import random as Ran
-dicee = []
+import random 
+#dicee = []
+sum =0
+timei =0
+
 while True :
-    dice = Ran.randint(1, 6)
-    dicee.append(dice)
-    if  6 in dicee :
-            print("oh yessss :))) \n")
-            num= str(sum(dicee))
-            print( "Add up the numbers of the dice game is : ",num )
-            break
-    else:
-        continue
+        dice = random.randint(1,6)
        
-print("the list of dice is :",dicee)
-print("Number of dice rolls is: ",(len(dicee)))
+        timei = timei + 1 
+        sum = dice + sum
+       # print("oh no :( \n")
+        print(dice)
+        print( "Sum of dice throws : ",sum )
+        if dice != 6:
+                break
+           
+        else:
+                
+                continue
+print("the list of dice is :",timei)
+#print("Sum of dice throws: ",sum)
